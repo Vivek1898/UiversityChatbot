@@ -12,12 +12,18 @@ intents:
 - my_name_is
 - ask_apply_online
 - ask_placements
+- ask_btech_cse
+- ask_mba
+- ask_bca
+- ask_ece
+- ask_data
 - user_submitted_password
 - user_wants_to_check_attendance
 - user_submitted_usn
 - user_wants_to_check_upcoming_holidays
 - user_wants_to_check_marks
 - user_wants_to_check_admission_status
+
 responses:
   utter_greet:
   - buttons:
@@ -44,17 +50,67 @@ responses:
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_courses:
-  - text: "CU offers industry-oriented professional programs in Engineering, MBA, MCA, Journalism, Hotel Management, Bio-Technology, Pharmacy, Architecture, and many more with the lowest course fee as compared to other universities in the region. For more information visit our official site 'https://www.cuchd.in/admissions/course-fee.php'"
+  - text: "412 Courses are offered by LPU.
+ 
+300+ courses across 18 streams
+37 - Management
+62 - University
+66 - Engineering
+81 - Overall
+SSS"
 
   utter_my_name_is:
   - text: "Nice to meet you {person}" 
 
   utter_ask_apply_online:
-  - text: "CU provides offline as well as online admission procedure. Online admission procedure focuses on CUCET examination. Apply Now on 'https://www.cuchd.in/admissions/how-to-apply.php'!"
+  - text: "Online application fee can be paid through debit card/ credit card or net banking.
+Application form and soft copy of LPU NEST kit is of Rs. 800 (for boys) and Rs 500 (for girls).
+Application form and printed copy of LPU NEST kit is of Rs. 1000 (for boys) and Rs 700 (for girls)."
 
   utter_ask_placements:
-  - text: "Highest Package in 2021-22 Engineering - ₹36LPA, MBA - ₹28LPA, Hotel Management - ₹18LPA. For detailed information visit 'https://www.cuchd.in/placements/'"
+  - text: "Various agencies have ranked LPU in the Top placement performance categories. Not just in India, LPU students are making a mark around the world. One of our Alumni is working in Google at a package of more than 1 Crore. This year only, Ms. Tania is hired by Microsoft at a package of Rs. 42 Lacs. Tech giant Cognizant has hired more than 2500 students in the recent years from LPU."
 
+  utter_ask_btech_cse:
+  - text: "-most demanding and high notching course in engineering, 
+-around 935 thousand students were enrolled in computer science engineering
+-Every year if you consider the requirement for a CS/IT engineer then it's around 10k
+  -Highest package-INR 42 LPA
+
+Top recruiter
+
+Microsoft (highest package)
+"
+
+  utter_ask_mba:
+  - text: "- an internationally recognized degree and is considered essential to obtain top-level management positions.
+-a broad degree involving the fundamentals of general management, but there are many specializations.
+
+-The highest salary package offered is 4.5 LPA by Accenture, and the lowest salary package offered is 3.50 LPA by Genpact.
+"
+
+  utter_ask_bca:
+  - text: "-at 3-year undergraduate degree programme 
+that focuses on knowledge on the basics of computer application and software development. 
+
+-a three-year undergraduate degree course for students who wish to delve into the world of Computer languages.
+
+-The highest offered salary package is INR 31 LPA and the lowest is INR 2.2 LPA.
+The average salary package ranges from INR 3.5 LPA to INR 4 LPA.
+"
+
+  utter_ask_ece:
+  - text: "- an emerging stream that offers firm promises to lend your career an edge.
+-Studying this domain of engineering would mean mastering the skills related to electrical engineering as well as having 
+an insight into the world of computer software and hardware.
+- The average package offered was 4.2 LPA,
+ the highest package was 25 LPA, 
+and the lowest package was 3 LPA. 
+The top recruiting companies are Google, Microsoft, Bosch, HP, Hitachi, AT&T, AmazON ETC
+"
+ 
+  utter_ask_data:
+  - text: "Data offers made in recent years by top recruitersLPU becomes the favourite landing place for top recruiters like Cognizant Technology Solutions, Tech Mahindra, Capgemini, Amazon, Bosch Engineering, Tata Consultancy Services, Federal Bank and many more!"
+    
 actions:
 - validate_credentials_and_display_marks
 - action_admission_info

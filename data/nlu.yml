@@ -330,3 +330,32 @@ nlu:
    - previous placement offers
    - what are the different placement offers offered to students
    - student's placement offers
+
+- intent: ask_btech_cse
+  examples: |
+   - tell me about btech cse
+   - tell me about cse
+
+- intent: ask_mba
+  examples: |
+   - tell me about mba
+   - tell me about mba2
+  
+- intent: ask_bca
+  examples: |
+   - tell me about bca
+   - tell me about bca2
+
+- intent: ask_ece
+  examples: |
+   - tell me about ece
+   - tell me about ece2
+
+- intent: ask_data
+  examples: |
+   - tell me about data
+   - tell me about data2
+   
+
+
+  

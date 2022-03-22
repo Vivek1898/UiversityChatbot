@@ -90,3 +90,30 @@ stories:
   - intent: ask_placements
   - action: utter_ask_placements
 
+- story: ask_btech_cse
+  steps:
+  - intent: ask_btech_cse
+  - action: utter_ask_btech_cse
+
+- story: ask_bca
+  steps:
+  - intent: ask_bca
+  - action: utter_ask_bca
+
+- story: ask_mba
+  steps:
+  - intent: ask_mba
+  - action: utter_ask_mba
+
+
+- story: ask_ece
+  steps:
+  - intent: ask_ece
+  - action: utter_ask_ece
+
+
+- story: ask_data
+  steps:
+  - intent: ask_data
+  - action: utter_ask_data
+
